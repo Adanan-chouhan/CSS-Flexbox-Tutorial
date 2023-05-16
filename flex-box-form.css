@@ -1,0 +1,47 @@
+#cantainer{
+    background-color:beige;
+    list-style: none;
+    margin: 50px;
+    padding: 20px;   
+}
+#cantainer li{
+display: flex;
+justify-content: flex-end;
+padding: 5px;
+}
+#cantainer li label{
+flex : 1;
+}
+ 
+@media screen and (min-width:300px) and (max-width:499px){
+    #cantainer li{
+        flex-direction: column;
+    }
+    #cantainer li input{
+    flex: 4;
+}
+}   
+
+@media screen and (min-width:500px) {
+         #cantainer li input{
+         flex: 4;
+     }
+ }  
+
+@media screen and (min-width:768px) {
+    #cantainer li input{
+    flex: 6;
+}
+}
+
+@media screen and (min-width:992px) {
+        #cantainer li input{
+        flex: 8;
+    }
+} 
+
+@media screen and (min-width:1200px) {
+         #cantainer li input{
+         flex: 10;
+ }
+} 
